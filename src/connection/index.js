@@ -54,14 +54,14 @@ const connectionDefinitions = (
       # A cursor for use in pagination.
       cursor: String!
       # The item at the end of the edge
-      node: ${connectionNode}
+      node: ${connectionNode}!
       ${edgeFields ? edgeFields : ""}
     }
   
     # A connection to a list of items.
     type ${name}Connection {
       # A list of edges.
-      edges: [${name}Edge]
+      edges: [${name}Edge!]!
       # Information to aid in pagination.
       pageInfo: PageInfo!
       ${connectionFields ? connectionFields : ""}

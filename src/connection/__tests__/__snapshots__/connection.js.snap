@@ -126,11 +126,11 @@ Object {
         Object {
           "name": "edges",
           "type": Object {
-            "kind": "LIST",
+            "kind": "NON_NULL",
             "name": null,
             "ofType": Object {
-              "kind": "OBJECT",
-              "name": "UserEdge",
+              "kind": "LIST",
+              "name": null,
             },
           },
         },
@@ -170,9 +170,12 @@ Object {
         Object {
           "name": "node",
           "type": Object {
-            "kind": "OBJECT",
-            "name": "User",
-            "ofType": null,
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": Object {
+              "kind": "OBJECT",
+              "name": "User",
+            },
           },
         },
       ],
